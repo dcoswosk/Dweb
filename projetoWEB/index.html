@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXAB4Wb+sKXJY5OYh7T1t5QcJ1g+3nIGtJ1lHnK+qewgHqjZUPIo5h+2xgPX8RYWZQqKj7Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Davi Coswosk</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Olá, eu sou <span>Davi Coswosk</span></h2>
+                <p>Aluno da Faculdade Faesa</p>
+                <a href="#portfolio" class="btn">Ver Portfólio</a>
+                <a href="#contato" class="btn">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Sobre Mim</h2>
+                <p> Estou cursando ciência da computação</p>
+                <a href="seu-curriculo.pdf" class="btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="Captura de tela_14-9-2024_173611_.jpeg" alt="Projeto 1">
+                    <div class="portfolio-item-info">
+                        <h3>TecBlog</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Capturar.JPG" alt="Projeto 2">
+                    <div class="portfolio-item-info">
+                        <h3>Go Fish</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Capturar2.JPG" alt="Projeto 3">
+                    <div class="portfolio-item-info">
+                        <h3>Pedra Papel e Tesoura</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="services-items">
+                <div class="service-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+                    <h3>Desenvolvimento Web</h3>
+                </div>
+                <div class="service-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/visual-studio--v1.png" alt="visual-studio--v1"/>
+                    <h3>Desenvolvimento c#</h3>
+                </div>
+                <div class="service-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/android-os.png" alt="android-os"/>
+                    <h3>Desenvolvimento Mobile</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><img width="48" height="48" src="https://img.icons8.com/color/48/email.png" alt="email"/> dcoswosk@gmail.com</p>
+                    <p><img width="48" height="48" src="https://img.icons8.com/color/48/ringer-volume.png" alt="ringer-volume"/> (11) 99876-8492</p>
+                    <p><img width="48" height="48" src="https://img.icons8.com/color/48/map-marker--v1.png" alt="map-marker--v1"/> Aracruz, Brasil</p>
+                    <div class="social-media">
+                        <a href="https://github.com/dcoswosk/Dweb"><img width="48" height="48" src="https://img.icons8.com/windows/32/github.png" alt="github"/></a>
+                        <a href="https://x.com/home"><img width="48" height="48" src="https://img.icons8.com/color/48/twitterx--v1.png" alt="twitterx--v1"/></i></a>
+                    </div>
+                </div>
+                <form action="#" method="post" class="contact-form">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
+                    <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 davi coswosk. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

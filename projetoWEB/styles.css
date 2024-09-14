@@ -1,0 +1,411 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Container Geral */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4c10f;
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('background.jpg'); /* Substitua por sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 80px; /* Altura do header */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #f4c10f;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f4c10f;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+}
+
+/* Sobre Mim */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Portfólio */
+.portfolio {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item-info {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-item-info {
+    transform: translateY(0);
+}
+
+.portfolio-item-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.portfolio-item-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Serviços */
+.services {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.services-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background-color: #f9f9f9;
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #f4c10f;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Contato */
+.contact {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    font-size: 20px;
+    color: #f4c10f;
+    margin-right: 10px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f4c10f;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f4c10f;
+    color: #333;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e0a800;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        margin: 0 auto 30px;
+    }
+
+    .portfolio-items,
+    .services-items,
+    .testimonials-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item,
+    .service-item,
+    .testimonial-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav.active ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Estilos adicionais para o menu responsivo */
+.menu-toggle {
+    display: none;
+}
