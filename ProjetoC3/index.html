@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação de Cores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container" id="gameContainer">
+    <h1>Jogo de Adivinhação de Cores</h1>
+    <p>Digite o nome de uma cor para tentar adivinhar.</p>
+    <input type="text" id="colorInput" placeholder="Digite uma cor" autofocus>
+    <button id="guessButton">Tentar</button>
+
+    <div class="feedback">
+      <p>Você tem <span id="attemptsLeft">3</span> tentativas restantes.</p>
+      <p id="message"></p>
+    </div>
+
+    <div id="colorDisplay" class="color-display"></div>
+
+    <div class="result">
+      <p id="resultMessage"></p>
+      <button id="restartButton" style="display: none;">Reiniciar Jogo</button>
+    </div>
+
+    <div id="colorList" style="display: block; margin-top: 20px;">
+      <h3>Lista de Cores Disponíveis</h3>
+      <ul id="colorListContainer"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
